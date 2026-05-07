@@ -1,0 +1,11 @@
+{
+  "name": "unity-build-package-prerelease-suite",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Unityパッケージのビルド、パッケージ構造、販売前チェック、手動検証準備をまとめる。",
+  "scripts": {
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/test-package-structure.ps1",
+    "validate": "npm test"
+  },
+  "license": "MIT"
+}
