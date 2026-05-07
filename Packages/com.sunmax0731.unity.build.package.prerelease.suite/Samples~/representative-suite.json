@@ -1,0 +1,120 @@
+{
+  "product": "unity-build-package-prerelease-suite",
+  "title": "Unityビルド・パッケージ・プレリリーススイート",
+  "benchmarkRepos": [
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ],
+  "requiredFields": [
+    "packagePath",
+    "version",
+    "buildTarget",
+    "manualEvidence"
+  ],
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "purpose": "Unityパッケージ構造、販売前チェック、手動検証準備の正常入力を確認する",
+      "input": {
+        "items": [
+          {
+            "id": "unity-build-package-prerelease-suite-happy",
+            "title": "Unityビルド・パッケージ・プレリリーススイート happy",
+            "packagePath": "Packages/com.sunmax0731.unity.build.package.prerelease.suite",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "ready"
+          }
+        ]
+      },
+      "expected": {
+        "result": "passed",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "purpose": "必須項目不足をerrorとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "unity-build-package-prerelease-suite-missing-required",
+            "title": "Unityビルド・パッケージ・プレリリーススイート missing-required",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "ready"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "blocked-status",
+      "purpose": "blocked状態をwarningとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "unity-build-package-prerelease-suite-blocked",
+            "title": "Unityビルド・パッケージ・プレリリーススイート blocked",
+            "packagePath": "Packages/com.sunmax0731.unity.build.package.prerelease.suite",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "blocked"
+          }
+        ]
+      },
+      "expected": {
+        "result": "warning",
+        "errors": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "purpose": "正常、必須不足、警告を同一バッチで集計する",
+      "input": {
+        "items": [
+          {
+            "id": "unity-build-package-prerelease-suite-happy",
+            "title": "Unityビルド・パッケージ・プレリリーススイート happy",
+            "packagePath": "Packages/com.sunmax0731.unity.build.package.prerelease.suite",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "ready"
+          },
+          {
+            "id": "unity-build-package-prerelease-suite-missing-required",
+            "title": "Unityビルド・パッケージ・プレリリーススイート missing-required",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "ready"
+          },
+          {
+            "id": "unity-build-package-prerelease-suite-blocked",
+            "title": "Unityビルド・パッケージ・プレリリーススイート blocked",
+            "packagePath": "Packages/com.sunmax0731.unity.build.package.prerelease.suite",
+            "version": "0.2.0",
+            "buildTarget": "Editor",
+            "manualEvidence": "docs/manual-test.md",
+            "status": "blocked"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}

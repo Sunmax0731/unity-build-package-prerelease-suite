@@ -4,13 +4,15 @@
   "private": false,
   "description": "Unityパッケージの構造、ビルド対象、販売前チェック、手動検証準備をまとめる。",
   "scripts": {
-    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/test-package-structure.ps1 && node tools/qcds-evaluate.cjs",
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/test-package-structure.ps1 && node tools/test-representative-suite.cjs && node tools/qcds-evaluate.cjs",
     "validate": "npm test"
   },
   "license": "MIT",
   "keywords": [
     "unityeditor",
     "qcds",
-    "pre-release"
+    "pre-release",
+    "strict-qcds",
+    "representative-suite"
   ]
 }
