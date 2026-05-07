@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "unity-release-1",
+      "title": "Build・Package・販売前リリーススイート サンプル 1",
+      "packagePath": "Packages/com.sunmax0731.sample",
+      "version": "0.1.0",
+      "buildTarget": "Editor",
+      "manualEvidence": "docs/manual-test.md"
+    },
+    {
+      "id": "unity-release-missing-required",
+      "title": "必須項目不足サンプル",
+      "version": "0.1.0",
+      "buildTarget": "Editor",
+      "manualEvidence": "docs/manual-test.md"
+    }
+  ]
+}
