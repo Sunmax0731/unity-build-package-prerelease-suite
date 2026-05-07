@@ -188,7 +188,7 @@
           "description": "docs ZIPが生成済みである",
           "kind": "zip",
           "pass": true,
-          "detail": "unity-build-package-prerelease-suite-docs.zip 10412 bytes"
+          "detail": "unity-build-package-prerelease-suite-docs.zip exists and exceeds minimum size"
         }
       ]
     },
