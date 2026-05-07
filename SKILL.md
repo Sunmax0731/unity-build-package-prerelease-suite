@@ -12,3 +12,4 @@
 
 - 参照元 ZIP に文字化けがある場合は、その本文を採用せず、ピックアップ一覧とドメインガイドから正式docsを再作成する。
 - このMVPでは、破壊的操作や外部API実行は行わず、dry-run とレポート作成に閉じる。
+- Windows PowerShell で BOMなしUTF-8の JSON を読む検証スクリプトは、`Get-Content -Encoding UTF8 -Raw` を明示する。既定読み取りだと日本語を誤読して `ConvertFrom-Json` が失敗する。
