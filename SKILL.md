@@ -13,3 +13,9 @@
 - 参照元 ZIP に文字化けがある場合は、その本文を採用せず、ピックアップ一覧とドメインガイドから正式docsを再作成する。
 - このMVPでは、破壊的操作や外部API実行は行わず、dry-run とレポート作成に閉じる。
 - Windows PowerShell で BOMなしUTF-8の JSON を読む検証スクリプトは、`Get-Content -Encoding UTF8 -Raw` を明示する。既定読み取りだと日本語を誤読して `ConvertFrom-Json` が失敗する。
+
+## Product Polish Lessons
+
+- コア検査、レビュー導線、表示は分ける。単一の `core` に全責務を残さない。
+- UIは結果本文だけでなく、状態、完了率、次アクションを表示する。
+- QCDS評価は改善後に再生成し、`A-` 未満の観点があれば同じブランチで直す。
