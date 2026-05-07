@@ -1,9 +1,9 @@
 {
   "name": "com.sunmax0731.unity.build.package.prerelease.suite",
-  "displayName": "Build・Package・販売前リリーススイート",
+  "displayName": "Unityビルド・パッケージ・プレリリーススイート",
   "version": "0.1.0",
   "unity": "2022.3",
-  "description": "Unityパッケージのビルド、パッケージ構造、販売前チェック、手動検証準備をまとめる。",
+  "description": "Unityパッケージの構造、ビルド対象、販売前チェック、手動検証準備をまとめる。",
   "author": {
     "name": "Sunmax0731"
   }

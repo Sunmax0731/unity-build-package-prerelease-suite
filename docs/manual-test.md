@@ -2,20 +2,22 @@
 
 ## 準備
 
-- Unity 2022.3 LTS 以降または Unity 6 を使用する。
-- UPM package path: `D:\AI\UnityEditor\unity-build-package-prerelease-suite\Packages`
-- ローカルサーバーは不要。
+- リポジトリ: `D:\AI\UnityEditor\unity-build-package-prerelease-suite`
+- `npm test` が成功していること
+- Unity 2022.3以降が必要です
+- パッケージ: `D:\AI\UnityEditor\unity-build-package-prerelease-suite\Packages\com.sunmax0731.unity.build.package.prerelease.suite\package.json`
+- ローカルサーバーは不要です
 
 ## 手順
 
-1. PowerShellで `cd D:\AI\UnityEditor\unity-build-package-prerelease-suite` を実行する。
-2. `powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\test-package-structure.ps1` が成功することを確認する。
-3. Unity プロジェクトを開き、Package Manager から `D:\AI\UnityEditor\unity-build-package-prerelease-suite\Packages\com.sunmax0731.unity.build.package.prerelease.suite` を Add package from disk で追加する。
-4. Window メニューから `Build・Package・販売前リリーススイート` を開く。
-5. Scan Sample を実行し、必須項目の不足が表示されることを確認する。
+1. Unityで任意の検証用プロジェクトを開く
+2. Package ManagerのAdd package from diskから `D:\AI\UnityEditor\unity-build-package-prerelease-suite\Packages\com.sunmax0731.unity.build.package.prerelease.suite\package.json` を追加する
+3. メニュー `Window/Sunmax0731/Unityビルド・パッケージ・プレリリーススイート` を開く
+4. `Scan Sample` を押す
+5. OK、INFO、ERRORのサンプル結果が表示されることを確認する
 
 ## 期待結果
 
-- パッケージがUnityへ追加できる。
-- EditorWindowが開く。
-- サンプルチェック結果が表示される。
+- 必須項目不足が分かる形で表示される。
+- 次アクションがユーザーに理解できる。
+- 実行ログ、出力ファイル、または画面表示をリリース前確認に使える。

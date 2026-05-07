@@ -9,20 +9,20 @@ namespace Sunmax0731.UnityBuildPackagePrereleaseSuite
         private Vector2 scroll;
         private readonly List<string> findings = new List<string>();
 
-        [MenuItem("Window/Sunmax0731/Build・Package・販売前リリーススイート")]
+        [MenuItem("Window/Sunmax0731/Unityビルド・パッケージ・プレリリーススイート")]
         public static void Open()
         {
-            GetWindow<UnityBuildPackagePrereleaseSuiteWindow>("Build・Package・販売前リリーススイート");
+            GetWindow<UnityBuildPackagePrereleaseSuiteWindow>("Unityビルド・パッケージ・プレリリーススイート");
         }
 
         private void OnGUI()
         {
-            EditorGUILayout.LabelField("Build・Package・販売前リリーススイート", EditorStyles.boldLabel);
-            EditorGUILayout.HelpBox("Unityパッケージ公開前の構造と証跡確認", MessageType.Info);
+            EditorGUILayout.LabelField("Unityビルド・パッケージ・プレリリーススイート", EditorStyles.boldLabel);
+            EditorGUILayout.HelpBox("Unityパッケージの構造、ビルド対象、販売前チェック、手動検証準備をまとめる。", MessageType.Info);
             using (new EditorGUILayout.HorizontalScope())
             {
                 DrawCard("対象", "Package");
-                DrawCard("状態", findings.Count == 0 ? "未検査" : "要確認");
+                DrawCard("状態", findings.Count == 0 ? "未検証" : "確認済み");
                 DrawCard("次", "Manual Test");
             }
             if (GUILayout.Button("Scan Sample"))

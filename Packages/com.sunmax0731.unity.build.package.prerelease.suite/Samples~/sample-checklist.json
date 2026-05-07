@@ -1,17 +1,19 @@
 {
   "items": [
     {
-      "id": "unity-release-1",
-      "title": "Build・Package・販売前リリーススイート サンプル 1",
-      "packagePath": "Packages/com.sunmax0731.sample",
-      "version": "0.1.0",
+      "id": "unity-build-package-prerelease-suite-1",
+      "title": "Unityビルド・パッケージ・プレリリーススイート サンプル1",
+      "status": "ready",
+      "packagePath": "Packages/com.sunmax0731.unity.build.package.prerelease.suite",
+      "version": "0.2.0",
       "buildTarget": "Editor",
       "manualEvidence": "docs/manual-test.md"
     },
     {
-      "id": "unity-release-missing-required",
+      "id": "unity-build-package-prerelease-suite-missing-required",
       "title": "必須項目不足サンプル",
-      "version": "0.1.0",
+      "status": "ready",
+      "version": "0.2.0",
       "buildTarget": "Editor",
       "manualEvidence": "docs/manual-test.md"
     }
