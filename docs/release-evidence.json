@@ -1,0 +1,32 @@
+{
+  "product": "unity-build-package-prerelease-suite",
+  "repository": "Sunmax0731/unity-build-package-prerelease-suite",
+  "githubUrl": "https://github.com/Sunmax0731/unity-build-package-prerelease-suite",
+  "tag": "v0.1.0-alpha.1",
+  "releaseUrl": "https://github.com/Sunmax0731/unity-build-package-prerelease-suite/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "assets": [
+    "unity-build-package-prerelease-suite-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "unity-editor-package",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
+  },
+  "github": {
+    "repo": "Sunmax0731/unity-build-package-prerelease-suite",
+    "url": "https://github.com/Sunmax0731/unity-build-package-prerelease-suite",
+    "releaseUrl": "https://github.com/Sunmax0731/unity-build-package-prerelease-suite/releases/tag/v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false
+  }
+}

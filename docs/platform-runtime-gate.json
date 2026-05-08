@@ -1,0 +1,11 @@
+{
+  "product": "unity-build-package-prerelease-suite",
+  "title": "Build・Package・販売前リリーススイート",
+  "domain": "UnityEditor",
+  "ideaNo": 5,
+  "platformType": "unity-editor-package",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}

@@ -4,8 +4,10 @@
   "private": false,
   "description": "Unityパッケージの構造、ビルド対象、販売前チェック、手動検証準備をまとめる。",
   "scripts": {
-    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/test-package-structure.ps1 && node tools/test-representative-suite.cjs && node tools/qcds-evaluate.cjs",
-    "validate": "npm test"
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/test-package-structure.ps1 && node tools/test-representative-suite.cjs && node tools/qcds-evaluate.cjs && node tools/platform-runtime-gate.mjs && node tools/closed-alpha-guard.mjs",
+    "validate": "npm test",
+    "platform:gate": "node tools/platform-runtime-gate.mjs",
+    "closed-alpha:guard": "node tools/closed-alpha-guard.mjs"
   },
   "license": "MIT",
   "keywords": [
