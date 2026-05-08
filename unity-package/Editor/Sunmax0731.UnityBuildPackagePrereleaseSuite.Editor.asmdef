@@ -1,0 +1,8 @@
+{
+  "name": "Sunmax0731.UnityBuildPackagePrereleaseSuite.Editor",
+  "references": [],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

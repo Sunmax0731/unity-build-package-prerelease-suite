@@ -74,7 +74,7 @@
     "quality": {
       "label": "Quality",
       "score": 100,
-      "grade": "S+",
+      "grade": "S-",
       "passed": 6,
       "expected": 6,
       "checks": [
@@ -134,7 +134,7 @@
     "cost": {
       "label": "Cost",
       "score": 100,
-      "grade": "S+",
+      "grade": "S-",
       "passed": 6,
       "expected": 6,
       "checks": [
@@ -195,7 +195,7 @@
     "delivery": {
       "label": "Delivery",
       "score": 100,
-      "grade": "S+",
+      "grade": "S-",
       "passed": 6,
       "expected": 6,
       "checks": [
@@ -269,7 +269,7 @@
     "satisfaction": {
       "label": "Satisfaction",
       "score": 100,
-      "grade": "S+",
+      "grade": "S-",
       "passed": 6,
       "expected": 6,
       "checks": [
@@ -340,5 +340,42 @@
     }
   },
   "overallScore": 100,
-  "overallGrade": "S+"
+  "overallGrade": "S-",
+  "gradeScale": [
+    "S+",
+    "S-",
+    "A+",
+    "A-",
+    "B+",
+    "B-",
+    "C+",
+    "C-",
+    "D+",
+    "D-"
+  ],
+  "qcdsDefinition": {
+    "Quality": "implementation, representative tests, platform runtime gate, security/privacy, traceability",
+    "Cost": "dependency and operating cost",
+    "Delivery": "release checklist, docs ZIP, prerelease, release evidence",
+    "Satisfaction": "manual-test readiness and user guidance"
+  },
+  "grades": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  },
+  "manualTestStatus": "not-run-by-codex",
+  "manualTestCapApplied": true,
+  "platformRuntimeGate": {
+    "product": "unity-build-package-prerelease-suite",
+    "platformType": "unity-editor-package",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "packageFile": "package.json",
+    "editorScript": "Packages/com.sunmax0731.unity.build.package.prerelease.suite/Editor/PrereleaseRuleEngine.cs",
+    "hostExecution": "Unity executable not available in this environment; importable package structure verified."
+  },
+  "belowAMinus": []
 }

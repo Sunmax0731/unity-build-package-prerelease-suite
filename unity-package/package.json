@@ -1,0 +1,10 @@
+{
+  "name": "com.sunmax0731.unity-build-package-prerelease-suite",
+  "displayName": "Build・Package・販売前リリーススイート",
+  "version": "0.1.0-alpha.1",
+  "unity": "2022.3",
+  "description": "unity-build-package-prerelease-suite closed alpha Unity editor package",
+  "author": {
+    "name": "Sunmax0731"
+  }
+}
